@@ -1,0 +1,58 @@
+
+/* background colors */
+#bannerColor {
+    background-color: green; 
+}
+
+#cloudBackground {
+    background-color: lightskyblue;
+}
+#cloudBackground2 {
+    width: 100%;
+    height: 3em;
+    background-color: lightskyblue;
+}
+
+
+
+
+
+
+/* fonts */
+
+.nav-link {
+    font-family: 'VT323', monospace;
+    font-size:2em ;
+    color: white;
+
+}
+
+
+
+
+
+
+
+/* texts */
+
+.cardImageText {
+    position: relative;   
+}
+
+.cardMainText {
+    position: absolute;
+    padding: 32%;
+    font-family: 'VT323', monospace;
+    font-size: 3em;    
+}
+
+.weatherImageText {
+    position: relative; 
+}
+
+#cardMainText {
+    position: absolute;
+    padding: 23%;
+    font-family: 'VT323', monospace;
+    font-size: 3em;
+}
