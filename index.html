@@ -11,183 +11,167 @@
 </head>
 <body>
     <!-- top banner -->
-    <div id='cardTopBanner' class="cardTopBanner" style="width: 100%">
+  <div id='cardTopBanner' class="cardTopBanner" style="width: 100%">
         <img src="./assets/minecraftBanner.jpg" class="card-img-top" alt="green and brown banner at the top of the page that resembles a video game">
         <!-- <div class="card-body">
           <p class="card-text">Welcome to ExploreCraft!</p> -->
         </div>
     
 <!-- nav bar -->
-    <div id='bannerColor'>
+  <div id='bannerColor'>
     <ul class="nav justify-content-center">
-        <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ansel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Owen</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ellie</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Rosie</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Mochi</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Bert</a>
-        </li>
+      <li class="nav-item"><a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Ansel</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Owen</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Ellie</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Rosie</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Mochi</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Bert</a>
+      </li>
       </ul>
-    </div>
-<div id='cloudBackground2'>    
-</div>
-<div id='cloudBackground'>
+  </div>
+
+  <div id='cloudBackground2'></div>    
+  <div id='cloudBackground'>
     <!-- 3 cards with content -->
-    <!-- card 1 -->
-    <div class="container">
-        <div class="row">
-          <div class="col-sm">
 
-            
-            <div class="card" style="width: 18rem;">
-
-              <div class='cardImageText'>
-                <p class='cardMainText'>Todays Date</p>
-                <img src="./assets/mapLarge.png" class="card-img-top" alt="...">
-              </div>
-                <div class="card-body">
-                  <h5 class="card-title">Celebrate!</h5>
-                  <p class="card-text">Learn about today's holidays around the world!</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Holiday Name(English)</li>
-                  <li class="list-group-item">Holiday Name(official language)</li>
-                  <li class="list-group-item">wikipedia link</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
+  <!-- card 1 TODAYS DATE-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class='cardImageText'><p class='cardMainText'><img src="./assets/clock.png" width="75%" height="75%" id="clock"></p>
+             <img src="./assets/mapLarge.png" class="card-img-top" alt="..." >               
+          </div>  
+          <div class="card-body">
+          <div class="row">
+           <h5 class="card-title"></h5>
+           <p id='date'></p>
+  
           </div>
-<!-- card 2- middle card -->
-          <div class="col-sm">
-              <div class="card" style="width: 18rem;">
+        </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.khanacademy.org/" target="blank">Math</a></li>
+            <li class="list-group-item"><a href="https://readingeggs.com/" target="blank">Reading</a></li>
+            <li class="list-group-item"><a href="https://www.prodigygame.com/main-en/wikipedia link">Games</a></li>
+          </ul>  
+        </div>  
+      </div>  
+                                               
+<!-- card 2- middle card weather -->
+  <div class="col-sm">
+    <div class="card" style="width: 18rem;">
+      <div class='cardImageText'><p class='cardMainText'><img src="./assets/weatherIcons.jpg" width="75%" height="75%" id="icons"></p>
+        <img src="./assets/mapLarge.png"  class="card-img-top" alt="This is an image of a light brown map">
+      </div>
 
-                <div class='cardImageText'>
-                <p class='cardMainText'>Weather Forecast</p>
-                <img src="./assets/mapLarge.png" class="card-img-top" alt="...">
-                </div>
+      <div class="card-body">
+        <h5 class="weather">Todays Weather Forecast</h5>
+        <p id='icon' class="card-text"></p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li id='cityState' class="list-group-item"></li>       
+      
+        <li id='weather'class="list-group-item"></li>
+      </ul>
+    </div>  
+  </div>  
+
+<!-- card 3 far right  Word of the day!-->       
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class='cardImageText'><p id='cardMainText'>Word of the Day!</p>
+          <img src="./assets/mapLarge.png" class="card-img-top" alt="...">
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Weather</h5>
-          <p class="card-text">Check out todays weather and get some time outside!</p>
+<!-- insert random word of the day below -->
+          <h5 class="card-title" id='randomWord'></h5>
+          <p id='definition' class="card-text"></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-    </div>
-
-    <!-- card 3 far right -->
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <div class='cardImageText'>
-                <p id='cardMainText'>Word of the Day!</p>
-                <img src="./assets/mapLarge.png" class="card-img-top" alt="...">
-              </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Word of the day!</h5>
-                  <p class="card-text">api data pull definition of word</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div id='cloudBackground2'>    
-    </div>
-    <!-- artwork carousel -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg">
-              <!-- code for carousel -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/minecraftMap.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/minecraftMap.png class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/minecraftMap.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-        </div>   
-    </div>
-    <div id='cloudBackground2'>    
-    </div>     
-</div>          
+          <li id='note' class="list-group-item"></li>
          
+        </ul>
+          <!-- <li class="list-group-item"></li> -->
+        <div>
+          <form id="input">
+            <br>
+            <p id="searchText">Enter a word below.</p>
+            <input type="text" id="searchBox" value="">
+            <br>
+            <br>
+            <button type="submit" class="button" id="button"><span>Click Me!</span></button>
+            <br>
+          </form>
         
-      
-  
+        </div> 
+      </div>
+    </div>          
+  </div>
+</div>
+    
+<div id='cloudBackground2'></div>    
+    
+    <!-- artwork carousel -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+              <!-- code for carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="./assets/minecraftMap.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+        </div>
+      <div class="carousel-item">
+        <img src="./assets/minecraftMap.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/minecraftMap.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+      </a>
+      </div>
+    </div>
+  </div>   
+</div>
+<div id='cloudBackground2'></div>     
+</div>   
+        
     <!-- lower banner -->
     
-<div id='cardLowerBanner' class="cardTopBanner" style="width: 100%">
+  <div id='cardLowerBanner' class="cardTopBanner" style="width: 100%">
     <img src="./assets/minecraftBanner.jpg" class="card-img-top" alt="green and brown banner at the bottom of the page that resembles a video game">
-</div>
-
-
-
-
-
+  </div>
 </div>
 
 
